@@ -12,6 +12,15 @@ app.get("/", (req, res) => {
   res.render("createcard");
 });
 
+app.post("/", (req, res) => {
+  const name = req.body.name
+  const about = req.body.about
+  data: {
+    id: length(database.json) + 1
+
+  }
+});
+
 app.get("/people/:id", (req, res) => {
   res.render("people");
 });
